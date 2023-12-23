@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <style>
+          
+           body{
+          background-image: url(data:image/jpeg;base64,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);
+            background-repeat:no-repeat ;
+           } 
+           h1{text-align: center;
+            color: #0f5133;
+            font-size: 60px;
+            font-weight: 400;}
+            h3{
+                font-size: 25px;
+                color: rgb(15, 46, 123);
+                font-weight: 100;
+                font-family: 'Times New Roman', Times, serif;
+              line-height: 50px;
+            }
+            h2{
+                font-size: 30px;
+                color: rgb(8, 85, 56);
+                font-weight: 200;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            a{
+                color: rgb(28, 226, 35);
+                font-size: 25px;
+                font-weight: 200;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: none;
+            }
+            input[type=button] {
+                     margin-top: 5px;
+                      font-size: 28px;
+                           border-radius: 20px;
+                           cursor: pointer;
+                          background: #98d892;
+                             color: #fbfaf8;
+                           }
+          
+          
+        </style>
+        <title>  Information About Country </title>
+    </head>
+<body>
+    <a href="C:\Users\yara\OneDrive\Desktop\INF egypt.html" class="fa fa_facebook"></a>
+<h1>  Saudi Arabia </h1>
+<br>
+<br>
+
+<h2>Information About Saudi Arabia </h2>
+<a href="C:\Users\yara\OneDrive\Desktop\Untitled-1.html"> LAST PAGE </a>
+
+<p>
+    <h3>
+        Saudi Arabia enjoys special importance among the countries of the Islamic world and the world in general because it contains in its territory the most important holy places, the Holy House and the Prophet’s Mosque. It is also one of the countries that has become a political weight that is calculated at the level of the region and especially with its continuous quest for leadership.
+
+
+    </h3>
+</p>
+<p>
+    <h3>
+        The Kingdom is located in the far south-west of Asia. It is bordered to the west by the Red Sea, to the east by the Arabian Gulf, the United Arab Emirates and Qatar. To the north is Kuwait, Iraq and Jordan, and to the south by Yemen and Oman.
+
+
+    </h3>
+</p>
+<p>
+    <h3>
+        Initially, the Kingdom is located in the northern hemisphere with the entire area occupying the largest part of the Arabian peninsula. It extends between 16 and 33 degrees north of the equator and between 34 and 56 degrees east of Greenwich.
+
+
+    </h3>
+</p>
+<p>
+    <h3>
+        The climate of the Kingdom is dominated by warm continental climate in the summer and cold in winter and rain in winter in the central region, while the western and southwestern highlands in the Kingdom are dominated by moderate weather.
+
+ 
+    </h3>
+</p>
+<p>
+    <h3>
+        The kingdom was established in three main stages until the establishment of Saudi Arabia, which was the third Saudi state, was established by King Abdul Aziz Al Saud. The nucleus of the Kingdom of Riyadh began to gather under its banner all parts of the Kingdom. 1932, and became the rule in his sons until this day, where seven of his sons took the rule of the kingdom and the last of them was the Custodian of the Two Holy Mosques King Salman, may Allah protect him.
+
+
+    </h3>
+</p>
+<p id="demo"></p>
+<script></script>
+<p>
+    <h3>
+        The first King of Saudi Arabia was the founding King Abdulaziz bin Abdulrahman Al Saud from 1932 until 1953.
+        King Saud bin Abdulaziz Al Saud from 1953 to 1964
+        
+King Faisal bin Abdulaziz Al Saud from 1964 to 1975.
+
+King Khalid bin Abdul Aziz Al Saud from 1975 to 1982.
+
+King Fahad Bin Abdulaziz Al Saud from 1982 until 2005.
+
+
+King Abdullah bin Abdulaziz Al Saud from 2005 to 2015.
+
+King Salman bin Abdulaziz Al Saud, the current King of the Kingdom and took power in 2015.
+
+
+  
+    </h3>
+</p>
+<p>
+    <h3>
+        The Kingdom enjoys high economic resources because it is one of the largest oil producing countries, which represents the main economic pillar. It includes a large number of large oil fields and refineries. It also has the most sacred lands in the world, making it a destination for millions of Muslims from all over the world. , And makes religious tourism occupies a high position in its economy, which was before the discovery of oil occupies the forefront in supporting the economy of the Kingdom, as well as the growing interest in industry and the establishment of industrial and commercial areas at the level of the Kingdom.
+
+
+    </h3>
+</p>
+<br>
+<hr>
+<br>
+<p>
+    <h3>
+        تتمتع السعودية بأهمية خاصة بين دول العالم الإسلامي والعالم بشكل عام نظرًا لأنها تضم في أراضيها أهم البقاع المقدسة وهى البيت الحرام و المسجد النبوي، كما أنها واحدة من الدول التي أصبحت تمثل ثقلًا سياسيًا يحسب على مستوى المنطقة وبخاصة مع سعيها المتواصل للوصول إلى الريادة.
+
+
+    </h3>
+</p>
+<p>
+    <h3>
+        تقع المملكة في أقصى جنوب غرب قارة آسيا ويحدها من الغرب البحر الأحمر، أما من الشرق فيحدها الخليج العربي و الإمارات العربية المتحدة وقطر، أما من الشمال فيحدها كل من الكويت و العراق و الأردن، ومن الجنوب اليمن و سلطنة عمان.
+
+
+    </h3>
+</p>
+<p>
+    <h3>
+        بداية فإن المملكة تقع في نصف الكرة الشمالي بكامل مساحتها التي تحتل الجزء الأكبر من مساحة شبه الجزيرة العربية، فتمتد بين دائرتي عرض 16 و33 درجة شمال خط الاستواء، وبين خطي طول 34 و56 درجة شرق جرينتش.
+
+
+    </h3>
+</p>
+<p>
+    <h3>
+        يغلب على مناخ المملكة المناخ القاري الحار في فصل الصيف والبارد في الشتاء كما أن أمطارها تسقط في فصل الشتاء في المنطقة الوسطى منها، أما المرتفعات الغربية والجنوبية الغربية في المملكة فيغلب عليها الجو المعتدل.
+
+   
+    </h3>
+</p>
+<p>
+    <h3>
+        مر تأسيس المملكة بثلاثة مراحل رئيسية حتى تم إعلان إنشاء المملكة العربية السعودية والتي تمثل الدولة السعودية الثالثة، والتي قام بتأسيسها الملك عبدالعزيز آل سعود رحمه الله وقد بدأ نواة المملكة من إمارة الرياض إلى أن جمع تحت لوائه كافة أجزاء المملكة وأعلن قيام دولة المملكة العربية السعودية في عام 1932م، وأصبح الحكم في أبنائه حتى يومنا هذا حيث تولى سبع من أبنائه حكم المملكة وكان أخرهم خادم الحرمين الشريفين الملك سلمان حفظه الله ورعاه.
+
+ 
+    </h3>
+</p>
+<p>
+    <h3>
+        كان أول ملوك المملكة العربية السعودية هو الملك المؤسس عبدالعزيز بن عبدالرحمن آل سعود من 1932 وحتى 1953.
+
+        الملك سعود بن عبدالعزيز آل سعود من 1953 وحتى 1964.
+
+        الملك فيصل بن عبدالعزيز آل سعود من 1964 وحتى 1975.
+        
+        الملك خالد بن عبدالعزيز آل سعود من 1975 وحتى 1982.
+        
+        الملك فهد بن عبدالعزيز آل سعود م 1982 وحتى 2005.
+        
+        الملك عبدالله بن عبدالعزيز آل سعود من 2005 وحتى 2015.
+        
+        الملك سلمان بن عبدالعزيز آل سعود الملك الحالي للملكة وتولى الحكم في عام 2015.
+    </h3>
+</p>
+<p>
+    <h3>
+        تتمتع المملكة بمقومات اقتصادية تعتبر عالية نظرًا لأنها من أكبر الدول المنتجة للبترول الذي يمثل الدعامة الاقتصادية الرئيسية، حيث تضم عدد كبير من حقول البترول الكبيرة ومحطات تكريره، إلى جانب أنها تضم في أراضيها أقدس البقاع على وجه الأرض مما يجعلها وجهة لملايين المسلمين من مختلف أنحاء العالم، ويجعل السياحة الدينية بها تحتل مكانة عالية في اقتصادها والتي كانت قبل اكتشاف البترول تحتل مكان الصدارة في دعم اقتصاد المملكة ذلك إلى جانب تطور الاهتمام بالصناعة وإنشاء المناطق الصناعية والتجارية على مستوى المملكة.
+
+
+    </h3>
+</p>
+ <p>
+    <h2>
+        بهذا نكون قد وصلنا إلى نهاية مقالنا بعنوان "معلومات عن المملكه العربيه السعوديه "  نتمنى أن تكونوا استمتعتم و تعرفتم على معاني جديدة ومفيده
+    </h2>
+ </p>
+ 
+ <p id="deco"></p>
+
+<script>  
+function msg(){  
+                open("https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9");  
+              }  
+</script>  
+<input type="button" value="Information on Wikipedia about Saudi" onclick="msg()"/>    
+<br>
+<br>
+
+
+</body>
+</html>
